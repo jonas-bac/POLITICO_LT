@@ -56,9 +56,9 @@ head(cum)
 
 #####  assign shorter political party names
 cum$partija = NA # to be filles using translator
-transl = read.table("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/partiju_zodynas.txt",sep="\t",h=T,stringsAsFactors = F)
-for (i in 1:nrow(transl)) {
-        cum$partija[grep(transl[i,"pavadinimo_fragmentas"],cum$part)] = transl[i,"trumpinys"]
+transl1 = read.table("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/partiju_zodynas.txt",sep="\t",h=T,stringsAsFactors = F)
+for (i in 1:nrow(transl1)) {
+        cum$partija[grep(transl1[i,"pavadinimo_fragmentas"],cum$part)] = transl1[i,"trumpinys"]
 }
 cum = cum[,-2]
 head(cum)
@@ -66,9 +66,9 @@ table(cum$partija,useNA="a")
 
 #####  assign shorter consulate names
 cum$apylinke = NA # to be filles using translator
-transl = read.table("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/konsulatu_zodynas.txt",sep="\t",h=T,stringsAsFactors = F)
-for (i in 1:nrow(transl)) {
-        cum$apylinke[grep(transl[i,"lokacijos_fragmentas"],cum$apyl)] = transl[i,"trumpinys"]
+transl2 = read.table("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/konsulatu_zodynas.txt",sep="\t",h=T,stringsAsFactors = F)
+for (i in 1:nrow(transl2)) {
+        cum$apylinke[grep(transl2[i,"lokacijos_fragmentas"],cum$apyl)] = transl2[i,"trumpinys"]
 }
 cum = cum[,-1]
 head(cum)
@@ -77,83 +77,18 @@ table(cum$apylinke,useNA="a")
 ### doublecheck
 cum[which(cum$vardas=="GABRIELIUS LANDSBERGIS"),]
 
+# force numerics
 cum$n = as.numeric(cum$n)
 cum$post = as.numeric(cum$post)
 cum$pre = as.numeric(cum$pre)
 
+# add political party info to the name (blame Vytautas Juozapaitis x2)
+dat = merge(cum,transl1,by.x="partija",by.y="trumpinys",all=T)
+dat$vardas_partija = paste(dat$vardas," (",dat$abbrv,")",sep="")
+head(dat)
+
 # save for future reference
-save(list="cum",file="~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/konsulines_daugiamandates_pirmumo_balsai.RData")
-
-######################################################
-
-
-library(dplyr)
-head(cum)
-df = as.data.frame(group_by(cum,apylinke) %>% summarise(pirmBals=sum(n)) %>% ungroup())
-dat = merge(tmp,df,by="apylinke",all=T)
-dat$eff = dat$n / dat$pirmBals * 100
-
-df = df[order(df$pirmBals),]
-barplot(df$pirmBals,names.arg = df$apylinke,horiz = T)
-
-
-cum[which((cum$apylinke=="Švedija")&(cum$partija=="Konservatoriai")),]
-
-
-unique(cum$partija)
-sub = cum[which(cum$partija=="ValstiečiaiŽalieji"),]
-dd = as.data.frame(group_by(sub,pre) %>% summarise(s=sum(n)) %>% ungroup())
-barplot(dd$s,names.arg = dd$pre)
+save(list="dat",file="~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/konsulines_daugiamandates_pirmumo_balsai_20161011-0800.RData")
 
 
 
-###########  PER PARTY (all parties)
-df = as.data.frame(group_by(cum,apylinke) %>% summarise(s=sum(n)) %>% ungroup())
-df = df[which(df$s>=500),]
-n_part = length(unique(cum$partija))
-n_apyl = length(unique(df$apylinke))
-partijos = unique(cum$partija)
-apylinkes = df$apylinke[order(df$s,decreasing = T)]
-m = matrix(NA,nr=n_part,nc=n_apyl)
-row.names(m) = partijos
-colnames(m) = apylinkes
-for (i in 1:n_part) {
-        for(j in 1:n_apyl) {
-                
-ix = which((cum$partija==partijos[i])&(cum$apylinke==apylinkes[j]))
-fr = sum(cum[ix,"n"]) / df$s[which(df$apylinke==apylinkes[j])]
-m[i,j] = fr
-rm(ix,fr)
-        }
-}
-library(corrplot)
-corrplot(m,is.corr = F)
-
-
-###########  PER PERSON  (12 most popular ones)
-# apylinkes (ambasados)
-df = as.data.frame(group_by(cum,apylinke) %>% summarise(s=sum(n)) %>% ungroup())
-df = df[which(df$s>=300),]
-df = df[order(df$s,decreasing = T),]
-apylinkes = df$apylinke[order(df$s,decreasing = T)]
-
-ss = group_by(cum,vardas) %>% summarise(s=sum(n)) %>% ungroup()
-ss = ss[order(ss$s,decreasing = T),]
-kandidatai = ss$vardas[1:24]
-
-n_kand = length(unique(kandidatai))
-n_apyl = length(unique(df$apylinke))
-m = matrix(NA,nr=n_kand,nc=n_apyl)
-row.names(m) = kandidatai
-colnames(m) = apylinkes
-for (i in 1:n_kand) {
-        for(j in 1:n_apyl) {
-                ix = which((cum$vardas==kandidatai[i])&(cum$apylinke==apylinkes[j]))
-                fr = sum(cum[ix,"n"]) / df$s[which(df$apylinke==apylinkes[j])]
-                m[i,j] = fr
-                rm(ix,fr)
-        }
-}
-library(corrplot)
-corrplot(m,is.corr = F,method = "square",tl.col = "royalblue4",tl.cex=0.7)
-df
