@@ -1,0 +1,15 @@
+pavadinimo_fragmentas	trumpinys	abbrv
+Tėvynės sąjunga	Konservatoriai	TS-LKD
+Lietuvos valstiečių ir žaliųjų	ValstiečiaiŽalieji	LVŽS
+Lietuvos socialdemokratų partija	SocDemai	LSDP
+Lietuvos Respublikos liberalų sąjūdis	Liberalai	LRLS
+Antikorupcinė N. Puteikio ir K. Krivicko koalicija	PuteikisKrivickas	APKK
+Lietuvos lenkų rinkimų akcija	LenkųAkcija	LLRA
+Partija Tvarka ir teisingumas	TvarkaTeisingumas	PTT
+Darbo partija	DarboPartija	DP
+laisvės sąjunga	LaisvėsSąjunga	LLS
+žaliųjų partija	Žalieji	LŽS
+Lietuvos sąrašas	LTSąrašas	PPLS
+Lietuvos liaudies partija	LiaudiesPartija	LLP
+Buškevičiaus ir Tautininkų koalicija	Tautininkai	BTK
+Drąsos kelias	DrąsosKelias	DK

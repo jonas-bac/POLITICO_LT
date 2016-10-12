@@ -1,0 +1,50 @@
+lokacijos_fragmentas	trumpinys
+Ambasada Airijoje	Airija
+Armėnijos Respublikoje	Armėnija
+Austrijos Respublikoje	Austrija
+Azerbaidžano Respublikoje	Azerbaidžanas
+Ambasada Belgijos	Belgija
+Ambasada Čekijos	Čekija
+Ambasada Danijos	Danija
+Ambasada Egipto	Egiptas
+Ambasada Estijos	Estija
+Ambasada Graikijos	Graikija
+Ambasada Gruzijoje	Gruzija
+Ambasada Italijos	Italija
+Ambasada Izraelio	Izraelis
+Ambasada Japonijoje	Japonija
+Ambasada Kazachstano	Kazachstanas
+konsulatas Almatoje	Kazachstanas-Almata
+Ambasada Kinijos	Kinija
+Ambasada Latvijos	Latvija
+Ambasada Moldovos	Moldova
+Ambasada Nyderlandų	Olandija
+Ambasada Norvegijos	Norvegija
+Ambasada Prancūzijos	Prancūzija
+Ambasada Rumunijoje	Rumunija
+Ambasada Suomijos	Suomija
+Ambasada Švedijos	Švedija
+Ambasada Šveicarijos	Šveicarija
+Ambasada Turkijos	Turkija
+Ambasada Ukrainoje	Ukraina
+Ambasada Vengrijoje	Vengrija
+Ambasada Indijos	Indija
+konsulatas San Paule	Brazilija
+Ambasada Pietų Afrikos	PAR
+konsulatas Los Andžele	JAV-LA
+Ambasada Baltarusijos	Baltarusija
+konsulatas Gardine	Baltarusija-Gardin
+Ambasada Ispanijos	Ispanija
+Konsulatas Valensijoje	Ispanija-Valenc
+Ambasada Jungtinėse Amerikos	JAV
+konsulatas Čikagoje	JAV-Chicago
+konsulatas Niujorke	JAV-NewY
+Ambasada Jungtinėje Karalystėje	JK
+Ambasada Kanadoje	Kanada
+Ambasada Lenkijos	Lenkija
+Konsulatas Seinuose	Lenkija-Seinai
+Ambasada Rusijos	Rusija
+konsulatas Sankt-Peterburge	Rusija-StPt
+konsulatas Kaliningrade	Rusija-Klngrd
+Konsulatas Sovetske	Rus-Sovetsk
+Ambasada Vokietijos	Vokietija
