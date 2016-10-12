@@ -138,6 +138,31 @@ points(xs,ys_upp_smth,type="l",col="orange",lwd=2)
 legend(60,10000,legend = c("extremalumo riba","balsų mediana"),
        col=c("orange","cornflowerblue"),lwd=2,bty = "n")
 
+# a propos: 
+#ix = grep("SKVERNELIS|KARBAUSKIS|ŠIMONYTĖ|PAPEČKYS|ULINSKAITĖ|NAGEVIČIUS|SIREIKA",dat$vardas)
+#keli_vardai = dat$vardas[ix]
+#points(dat$pre[ix],dat$votes_norm[ix],pch=19,col=1:7)
+#legend(80,5000,legend = keli_vardai,col=1:7,pch=19,bty = "n",cex=0.8)
+
+#ixs = grep("NAGEVIČIUS|PAPEČKYS|ULINSKAITĖ|SIREIKA",dat$vardas) # nuskriaustieji?
+#ixs = grep("SKVERNELIS|KARBAUSKIS|ŠIMONYTĖ",dat$vardas) # nepelnytai apdovanotieji?
+#ofs = 2
+# surinkti balsai (nenormalizuoti)
+#par(mfrow=c(2,2))
+#for (i in 1:length(ixs)) {
+#        tmp = dat[which(dat$pre %in% (dat[ixs[i],"pre"]-ofs):(dat[ixs[i],"pre"]+ofs)),]
+#        hist(tmp$n,main=dat$vardas[ixs[i]],xlab="surinkti pirmumo balsai",ylab="kandidatai")
+#        abline(v=dat$n[ixs[i]],col="red",lwd=2)
+#}
+# normalizuoti balsai
+#par(mfrow=c(2,2))
+#for (i in 1:length(ixs)) {
+#        tmp = dat[which(dat$pre %in% (dat[ixs[i],"pre"]-ofs):(dat[ixs[i],"pre"]+ofs)),]
+#        hist(tmp$votes_norm,main=dat$vardas[ixs[i]],xlab="normalizuoti pirmumo balsai")
+#        abline(v=dat$votes_norm[ixs[i]],col="red",lwd=2)
+#}
+#par(mfrow=c(1,1))
+
 thr = data.frame(xs,ys_upp_smth,stringsAsFactors = F)
 mrg = merge(dat,thr,by.x="pre",by.y="xs",all=T)
 mrg = mrg[which( mrg$votes_norm >mrg$ys_upp_smth),]
@@ -179,4 +204,8 @@ cix = c("partija","vardas_partija","post","pre","n","n_cand","s")
 out = sub[,cix]
 colnames(out) =  c("partija","vardas_partija","NRpo","NRprieš","pirmumoBalsų","partijojKandidatų","partijosPirmumoBalsai")
 write.table(out,"~/Downloads/deleteme.nonsense.txt",row.names = F,col.names = T,sep="\t",quote=F)
+
+
+
+
 
