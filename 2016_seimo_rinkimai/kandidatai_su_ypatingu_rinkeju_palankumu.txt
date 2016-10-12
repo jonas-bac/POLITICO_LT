@@ -1,3 +1,17 @@
+# Duomenys: vrk.lt 2016 Spalio 12, 07:00
+# Atlikta: 2016 Spalio 12, jonasB
+# Skaičiavimams naudotos tik partijos su 130+ kandidatų (mažesnėms partijoms reikalingas sudėtingesnis normalizavimas)
+# Skaičiavimams naudojami tik pirmumo balsai (daugiamandatės) iš visų apylinkių ir LT diplomatinių atstovybių
+# Kandidato gautų pirmumo balsų skaičius normalizuotas pagal partijos gautų balsų skaičių ir partijos kandidatų skaičių
+# Kandidato išskirtinis populiarumas apibrėžiamas kaip 2 standartiniai nuokrypiai (SD) nuo gautų balsų medianos palyginamoje kandidatų grupėje (kandidatai su panašiu priešrinkiminiu sąrašo numeriu)
+#
+# NRpo - kandidato numeris sąraše po rinkimų pirmo turo
+# NRprieš - kandidato numeris sąraše prieš rinkimų pirmą turą
+# pirmumoBalsų - kandidato surinkti pirmumo balsai
+# partijojKandidatų -  130-141
+# partijosPirmumoBalsai - pirmumo balsų suma tekusi partijai
+#
+#
 partija	vardas_partija	NRpo	NRprieš	pirmumoBalsų	partijojKandidatų	partijosPirmumoBalsai
 Konservatoriai	INGRIDA ŠIMONYTĖ (TS-LKD)	2	4	117476	140	886899
 Konservatoriai	ŽYGIMANTAS PAVILIONIS (TS-LKD)	7	18	26774	140	886899
