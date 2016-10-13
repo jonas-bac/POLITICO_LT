@@ -44,6 +44,11 @@ rm(tmp)
 
 }
 
+## PROBLEM!  some apygNR-apylNR combinations are not unique! soviet hell!
+sum(duplicated(transl3$abbrevi_numb))
+exmpl = transl3$abbrevi_numb[which(duplicated(transl3$abbrevi_numb))[1:3]]
+transl3[which(transl3$abbrevi_numb %in% exmpl),]  # shiaip tai chia skandalas, sakychiau
+
 # doublecheck whether first word of apygarda title uniquelly matched apygarda number
 mtr = as.matrix(table(transl3$apygarda,transl3$apyg_nr))
 as.numeric(apply(mtr,1,function(x) sum(x !=0)))  # should be only 1's
@@ -53,7 +58,7 @@ as.numeric(apply(mtr,1,function(x) sum(x !=0)))  # should be only 1's
 #df = df[order(-df$n),]; df[1:15,]; length(unique(transl3$apygapyl_concat))
 
 # check for duplicated apygapyl abbrevi names
-sum(duplicated(transl3$abbrevi_name))
+sum(duplicated(transl3$abbrevi_name))  
 dupl_nms = transl3[which(duplicated(transl3$abbrevi_name)),"abbrevi_name"]
 transl3[which(transl3$abbrevi_name %in% dupl_nms[1:3]),]  # there are some, but I prefer to keep it that way
 
@@ -61,9 +66,9 @@ transl3[which(transl3$abbrevi_name %in% dupl_nms[1:3]),]  # there are some, but 
 sum(duplicated(transl3$apygapyl_hashed))
 
 # make sure that all are ordered based on apygardos NR and then apylinkes NR
-transl3 = transl3[order(transl3$apyg_nr,transl3$apyl_nr),]
+transl3 = transl3[order(transl3$apyg_nr,transl3$apygapyl_hashed),]
 transl3$ordr = seq(nrow(transl3))
-
+transl3[1:20,]
 
 ##### for HDF5 storage and compression reasons, need to create an index coordinates
 tmp = as.data.frame(group_by(transl3,apyg_nr) %>% summarise(n_apyl=n()) %>% ungroup())
@@ -75,10 +80,10 @@ z = 1:max(tmp$apyg_nr) # max number of apygardos (71)
 tmp$from = 1 + (z-1)*max(tmp$n_apyl)  # first instance index in storage matrix (max number of apylinkes)
 tmp$till = 0 + (z )*max(tmp$n_apyl)   # last instance index in storage matrix (max number of apylinkes)
 transl3 = merge(transl3,tmp,by="apyg_nr",all=T)
-transl3 = as.data.frame(group_by(transl3,apyg_nr) %>% mutate(apyl_rank=rank(apyl_nr)) %>% ungroup())
+transl3 = as.data.frame(group_by(transl3,apyg_nr) %>% mutate(hash_rank=rank(apygapyl_hashed)) %>% ungroup())
 
 ## assign the final position in HDF5 file (assuming 60*71 columns)
-transl3$poz = transl3$from + transl3$apyl_rank - 1
+transl3$poz = transl3$from + transl3$hash_rank - 1
 transl3[1:100,]
 
 write.table(transl3,"~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/apylinkiu_zodynas.txt",
