@@ -1,15 +1,28 @@
-pavadinimo_fragmentas	trumpinys	abbrv
-Tėvynės sąjunga	Konservatoriai	TS-LKD
-Lietuvos valstiečių ir žaliųjų	ValstiečiaiŽalieji	LVŽS
-Lietuvos socialdemokratų partija	SocDemai	LSDP
-Lietuvos Respublikos liberalų sąjūdis	Liberalai	LRLS
-Antikorupcinė N. Puteikio ir K. Krivicko koalicija	PuteikisKrivickas	APKK
-Lietuvos lenkų rinkimų akcija	LenkųAkcija	LLRA
-Partija Tvarka ir teisingumas	TvarkaTeisingumas	PTT
-Darbo partija	DarboPartija	DP
-laisvės sąjunga	LaisvėsSąjunga	LLS
-žaliųjų partija	Žalieji	LŽS
-Lietuvos sąrašas	LTSąrašas	PPLS
-Lietuvos liaudies partija	LiaudiesPartija	LLP
-Buškevičiaus ir Tautininkų koalicija	Tautininkai	BTK
-Drąsos kelias	DrąsosKelias	DK
+#
+# Seimo rinkimai 2016
+# created on 2016 Oct 11
+# updated on 2016 Oct 13
+# by Jonas B.
+#
+# pavadinimo_fragmentas:  exactly matches a part of party name. used for grep'ing
+# trumpinys: short but clear common name for a party
+# abbrv: very short capitalized party name for graphs
+# hash:  xxhash32 on full_name (full party name)
+#
+#
+pavadinimo_fragmentas	trumpinys	abbrv	hash	full_name
+Tėvynės sąjunga	Konservatoriai	TS-LKD	49816735	Tėvynės sąjunga - Lietuvos krikščionys demokratai
+Lietuvos valstiečių ir žaliųjų	ValstiečiaiŽalieji	LVŽS	6f929066	Lietuvos valstiečių ir žaliųjų sąjunga
+Lietuvos socialdemokratų partija	SocDemai	LSDP	e40e14d2	Lietuvos socialdemokratų partija
+Lietuvos Respublikos liberalų sąjūdis	Liberalai	LRLS	18fd794f	Lietuvos Respublikos liberalų sąjūdis
+Antikorupcinė N. Puteikio ir K. Krivicko koalicija	PuteikisKrivickas	APKK	583894b3	Antikorupcinė N. Puteikio ir K. Krivicko koalicija (Lietuvos centro partija, Lietuvos pensininkų partiją)
+Lietuvos lenkų rinkimų akcija	LenkųAkcija	LLRA	92553076	Lietuvos lenkų rinkimų akcija-Krikščioniškų šeimų sąjunga
+Partija Tvarka ir teisingumas	TvarkaTeisingumas	PTT	d6aa0091	Partija Tvarka ir teisingumas
+Darbo partija	DarboPartija	DP	03864b86	Darbo partija
+laisvės sąjunga	LaisvėsSąjunga	LLS	8c0e9f09	Lietuvos laisvės sąjunga (liberalai)
+žaliųjų partija	Žalieji	LŽS	c5e24136	Lietuvos žaliųjų partija
+Lietuvos sąrašas	LTSąrašas	PPLS	145fd970	Politinė partija „Lietuvos sąrašas“
+Lietuvos liaudies partija	LiaudiesPartija	LLP	292e5282	Lietuvos liaudies partija
+Buškevičiaus ir Tautininkų koalicija	Tautininkai	BTK	19122bce	S. Buškevičiaus ir Tautininkų koalicija „Prieš korupciją ir skurdą“ (Partija „Jaunoji Lietuva“, Tautininkų sąjunga)
+Drąsos kelias	DrąsosKelias	DK	afbb564e	„Drąsos kelias“ politinė partija
+
