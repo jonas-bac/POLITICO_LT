@@ -12,17 +12,17 @@
 #
 pavadinimo_fragmentas	trumpinys	abbrv	hash	full_name
 Tėvynės sąjunga	Konservatoriai	TS-LKD	49816735	Tėvynės sąjunga - Lietuvos krikščionys demokratai
-Lietuvos valstiečių ir žaliųjų	ValstiečiaiŽalieji	LVŽS	6f929066	Lietuvos valstiečių ir žaliųjų sąjunga
-Lietuvos socialdemokratų partija	SocDemai	LSDP	e40e14d2	Lietuvos socialdemokratų partija
-Lietuvos Respublikos liberalų sąjūdis	Liberalai	LRLS	18fd794f	Lietuvos Respublikos liberalų sąjūdis
-Antikorupcinė N. Puteikio ir K. Krivicko koalicija	PuteikisKrivickas	APKK	583894b3	Antikorupcinė N. Puteikio ir K. Krivicko koalicija (Lietuvos centro partija, Lietuvos pensininkų partiją)
-Lietuvos lenkų rinkimų akcija	LenkųAkcija	LLRA	92553076	Lietuvos lenkų rinkimų akcija-Krikščioniškų šeimų sąjunga
-Partija Tvarka ir teisingumas	TvarkaTeisingumas	PTT	d6aa0091	Partija Tvarka ir teisingumas
+valstiečių ir žaliųjų	ValstiečiaiŽalieji	LVŽS	6f929066	Lietuvos valstiečių ir žaliųjų sąjunga
+socialdemokratų partija	SocDemai	LSDP	e40e14d2	Lietuvos socialdemokratų partija
+liberalų sąjūdis	Liberalai	LRLS	18fd794f	Lietuvos Respublikos liberalų sąjūdis
+Puteikio ir K. Krivicko	PuteikisKrivickas	APKK	583894b3	Antikorupcinė N. Puteikio ir K. Krivicko koalicija (Lietuvos centro partija, Lietuvos pensininkų partiją)
+lenkų rinkimų akcija	LenkųAkcija	LLRA	92553076	Lietuvos lenkų rinkimų akcija-Krikščioniškų šeimų sąjunga
+Tvarka ir teisingumas	TvarkaTeisingumas	PTT	d6aa0091	Partija Tvarka ir teisingumas
 Darbo partija	DarboPartija	DP	03864b86	Darbo partija
 laisvės sąjunga	LaisvėsSąjunga	LLS	8c0e9f09	Lietuvos laisvės sąjunga (liberalai)
 žaliųjų partija	Žalieji	LŽS	c5e24136	Lietuvos žaliųjų partija
 Lietuvos sąrašas	LTSąrašas	PPLS	145fd970	Politinė partija „Lietuvos sąrašas“
-Lietuvos liaudies partija	LiaudiesPartija	LLP	292e5282	Lietuvos liaudies partija
-Buškevičiaus ir Tautininkų koalicija	Tautininkai	BTK	19122bce	S. Buškevičiaus ir Tautininkų koalicija „Prieš korupciją ir skurdą“ (Partija „Jaunoji Lietuva“, Tautininkų sąjunga)
+liaudies partija	LiaudiesPartija	LLP	292e5282	Lietuvos liaudies partija
+Buškevičiaus ir Tautininkų	Tautininkai	BTK	19122bce	S. Buškevičiaus ir Tautininkų koalicija „Prieš korupciją ir skurdą“ (Partija „Jaunoji Lietuva“, Tautininkų sąjunga)
 Drąsos kelias	DrąsosKelias	DK	afbb564e	„Drąsos kelias“ politinė partija
 
