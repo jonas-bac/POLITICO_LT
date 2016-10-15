@@ -1,50 +1,53 @@
-lokacijos_fragmentas	trumpinys
-Ambasada Airijoje	Airija
-Armėnijos Respublikoje	Armėnija
-Austrijos Respublikoje	Austrija
-Azerbaidžano Respublikoje	Azerbaidžanas
-Ambasada Belgijos	Belgija
-Ambasada Čekijos	Čekija
-Ambasada Danijos	Danija
-Ambasada Egipto	Egiptas
-Ambasada Estijos	Estija
-Ambasada Graikijos	Graikija
-Ambasada Gruzijoje	Gruzija
-Ambasada Italijos	Italija
-Ambasada Izraelio	Izraelis
-Ambasada Japonijoje	Japonija
-Ambasada Kazachstano	Kazachstanas
-konsulatas Almatoje	Kazachstanas-Almata
-Ambasada Kinijos	Kinija
-Ambasada Latvijos	Latvija
-Ambasada Moldovos	Moldova
-Ambasada Nyderlandų	Olandija
-Ambasada Norvegijos	Norvegija
-Ambasada Prancūzijos	Prancūzija
-Ambasada Rumunijoje	Rumunija
-Ambasada Suomijos	Suomija
-Ambasada Švedijos	Švedija
-Ambasada Šveicarijos	Šveicarija
-Ambasada Turkijos	Turkija
-Ambasada Ukrainoje	Ukraina
-Ambasada Vengrijoje	Vengrija
-Ambasada Indijos	Indija
-konsulatas San Paule	Brazilija
-Ambasada Pietų Afrikos	PAR
-konsulatas Los Andžele	JAV-LA
-Ambasada Baltarusijos	Baltarusija
-konsulatas Gardine	Baltarusija-Gardin
-Ambasada Ispanijos	Ispanija
-Konsulatas Valensijoje	Ispanija-Valenc
-Ambasada Jungtinėse Amerikos	JAV
-konsulatas Čikagoje	JAV-Chicago
-konsulatas Niujorke	JAV-NewY
-Ambasada Jungtinėje Karalystėje	JK
-Ambasada Kanadoje	Kanada
-Ambasada Lenkijos	Lenkija
-Konsulatas Seinuose	Lenkija-Seinai
-Ambasada Rusijos	Rusija
-konsulatas Sankt-Peterburge	Rusija-StPt
-konsulatas Kaliningrade	Rusija-Klngrd
-Konsulatas Sovetske	Rus-Sovetsk
-Ambasada Vokietijos	Vokietija
+lokacijos_fragmentas	apyl	apyg	apygapyl_hash	apyg_nr	apyl_nr	apgapl_abbrev
+Ambasada Airijoje	Airija	Diplomatinė	6e499d76	0	1	Diplomatinė-Airija(1)
+Armėnijos Respublikoje	Armėnija	Diplomatinė	3f81f1d2	0	3	Diplomatinė-Armėnija(3)
+Austrijos Respublikoje	Austrija	Diplomatinė	fc989c38	0	5	Diplomatinė-Austrija(5)
+Azerbaidžano Respublikoje	Azerbaidžanas	Diplomatinė	8c32f5ab	0	6	Diplomatinė-Azerbaidžanas(6)
+Ambasada Belgijos	Belgija	Diplomatinė	359ce84f	0	8	Diplomatinė-Belgija(8)
+Ambasada Čekijos	Čekija	Diplomatinė	09aa6a6e	0	11	Diplomatinė-Čekija(11)
+Ambasada Danijos	Danija	Diplomatinė	f8b5a921	0	12	Diplomatinė-Danija(12)
+Ambasada Egipto	Egiptas	Diplomatinė	4d871a3a	0	13	Diplomatinė-Egiptas(13)
+Ambasada Estijos	Estija	Diplomatinė	da659fe2	0	14	Diplomatinė-Estija(14)
+Ambasada Graikijos	Graikija	Diplomatinė	3ddbf802	0	15	Diplomatinė-Graikija(15)
+Ambasada Gruzijoje	Gruzija	Diplomatinė	8107ac09	0	16	Diplomatinė-Gruzija(16)
+Ambasada Italijos	Italija	Diplomatinė	5bfe9693	0	18	Diplomatinė-Italija(18)
+Ambasada Izraelio	Izraelis	Diplomatinė	e1d3a82f	0	19	Diplomatinė-Izraelis(19)
+Ambasada Japonijoje	Japonija	Diplomatinė	d1de8fc7	0	20	Diplomatinė-Japonija(20)
+Ambasada Kazachstano	Kazachstanas	Diplomatinė	72e226ca	0	24	Diplomatinė-Kazachstanas(24)
+konsulatas Almatoje	Kazachstanas-Almata	Diplomatinė	05116bdf	0	25	Diplomatinė-Kazachstanas-Almata(25)
+Ambasada Kinijos	Kinija	Diplomatinė	9163afb7	0	26	Diplomatinė-Kinija(26)
+Ambasada Latvijos	Latvija	Diplomatinė	1f5c6e1e	0	27	Diplomatinė-Latvija(27)
+Ambasada Moldovos	Moldova	Diplomatinė	7de5d118	0	29	Diplomatinė-Moldova(29)
+Ambasada Nyderlandų	Olandija	Diplomatinė	3bde34c7	0	30	Diplomatinė-Olandija(30)
+Ambasada Norvegijos	Norvegija	Diplomatinė	d558560b	0	31	Diplomatinė-Norvegija(31)
+Ambasada Prancūzijos	Prancūzija	Diplomatinė	a1929001	0	33	Diplomatinė-Prancūzija(33)
+Ambasada Rumunijoje	Rumunija	Diplomatinė	9ad9cc16	0	34	Diplomatinė-Rumunija(34)
+Ambasada Suomijos	Suomija	Diplomatinė	b899e6d8	0	37	Diplomatinė-Suomija(37)
+Ambasada Švedijos	Švedija	Diplomatinė	2873793e	0	38	Diplomatinė-Švedija(38)
+Ambasada Šveicarijos	Šveicarija	Diplomatinė	b6ce1faf	0	39	Diplomatinė-Šveicarija(39)
+Ambasada Turkijos	Turkija	Diplomatinė	b5de3a79	0	40	Diplomatinė-Turkija(40)
+Ambasada Ukrainoje	Ukraina	Diplomatinė	3bf094eb	0	41	Diplomatinė-Ukraina(41)
+Ambasada Vengrijoje	Vengrija	Diplomatinė	1f5e3812	0	43	Diplomatinė-Vengrija(43)
+Ambasada Indijos	Indija	Diplomatinė	25a06311	0	46	Diplomatinė-Indija(46)
+konsulatas San Paule	Brazilija	Diplomatinė	2271e880	0	47	Diplomatinė-Brazilija(47)
+Ambasada Pietų Afrikos	PAR	Diplomatinė	c2926c69	0	66	Diplomatinė-PAR(66)
+konsulatas Los Andžele	JAV-LA	Diplomatinė	f9cfe1a0	0	67	Diplomatinė-JAV-LA(67)
+Ambasada Baltarusijos	Baltarusija	Diplomatinė	0ea13c33	0	701	Diplomatinė-Baltarusija(701)
+konsulatas Gardine	Baltarusija-Gardin	Diplomatinė	0d7b37ee	0	702	Diplomatinė-Baltarusija-Gardin(702)
+Ambasada Ispanijos	Ispanija	Diplomatinė	033b4890	0	1701	Diplomatinė-Ispanija(1701)
+Konsulatas Valensijoje	Ispanija-Valenc	Diplomatinė	751d4b7a	0	1702	Diplomatinė-Ispanija-Valenc(1702)
+Ambasada Jungtinėse Amerikos	JAV	Diplomatinė	32274f06	0	2101	Diplomatinė-JAV(2101)
+konsulatas Čikagoje	JAV-Chicago	Diplomatinė	9a3088fe	0	2102	Diplomatinė-JAV-Chicago(2102)
+konsulatas Niujorke	JAV-NewY	Diplomatinė	dd5f651e	0	2103	Diplomatinė-JAV-NewY(2103)
+Ambasada Jungtinėje Karalystėje	JK	Diplomatinė	66660444	0	2201	Diplomatinė-JK(2201)
+Ambasada Kanadoje	Kanada	Diplomatinė	4d4e6a14	0	2301	Diplomatinė-Kanada(2301)
+#konsulatas Toronte	Kanada-Toront	Diplomatinė	318582e1	0	2302	Diplomatinė-Kanada-Toront(2302)
+Ambasada Lenkijos	Lenkija	Diplomatinė	3872f19a	0	2801	Diplomatinė-Lenkija(2801)
+Konsulatas Seinuose	Lenkija-Seinai	Diplomatinė	25e2252c	0	2802	Diplomatinė-Lenkija-Seinai(2802)
+Ambasada Rusijos	Rusija	Diplomatinė	c9100cfa	0	3501	Diplomatinė-Rusija(3501)
+konsulatas Sankt-Peterburge	Rusija-StPt	Diplomatinė	c4dee18c	0	3502	Diplomatinė-Rusija-StPt(3502)
+konsulatas Kaliningrade	Rusija-Klngrd	Diplomatinė	77c1d701	0	3503	Diplomatinė-Rusija-Klngrd(3503)
+Konsulatas Sovetske	Rus-Sovetsk	Diplomatinė	3af6f91a	0	3504	Diplomatinė-Rus-Sovetsk(3504)
+Ambasada Vokietijos	Vokietija	Diplomatinė	0e023bcd	0	4501	Diplomatinė-Vokietija(4501)
+#Punktas Lemonte	JAV-Lemontas	Diplomatinė	260951b6	0	4502	Diplomatinė-JAV-Lemont(4502)
+
