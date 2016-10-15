@@ -1,0 +1,32 @@
+
+duomenys: naudojami tik daugiamandachiu pirmumo balsai
+
+0) eliminuoji partijas (ir ju kandidatus) su itin mazhu kandidatu skaichium (e.g. <100). ten savos problemos.
+1) kiekvienam kandidatui priskiriam (atskiram stulpelyje) jo partijos sukauptu pirmumo balsu suma (S)
+2) kiekvienam kandidatui priskiriam (atskiram stulpelyje) jo partijos kandidatu skaichiu (K)
+3) normalizuojam kandidato surinktus pirmumo balsus (N) pagal S:
+	Nnorm1 = N / S * 100000  (atseit visos partijos gavo po 100000 pirmumo balsu)
+4) normalizuojam kandidato surinktus pirmumo balsus (N) pagal K:
+	Nnorm2 = Nnorm1 * K / 140 (atseit visos partijos turi po 140 kandidatu)
+
+logika 3 ir 4 zhingsniuose yra tokia:
+(3): jei partija populiari, tai ir kandidatas gaus daug balsų. todel visų kandidatų balsus dalinam ish jų partijos balsų sumos ir dauginam ish konstantos (pvz vidutinio, vidutinės partijos surinkto pirmBalsų skaichiaus)
+(4): jei partijos sarashas ilgas, tai mazhiau tiketina, kad kandidatas bus pasirinktas atsitiktinai rashant numerius, todel didesnių partijų kandidatus reikia "paboostinti" jų pirmumo balsus dauginant ish partijos dydzhio ir dalinant ish konstantos (vidutinio partijos dydžio).
+
+5) kadangi partiju mazhai (ypach kai ishemem mazhasias) tai lyginti tarpusavyje pvz 7'os prieshrinkiminio sarasho pozicijos kandidatus tarp partiju yra gan pavojinga, nes bus tik kelios tokios pozicijos, ty bus sunku nustatyti, kad tai yra outlier'is. tad prieshrinkiminio sarasho pozicijoms priskiriam ofseta (ofs): pvz jei kandidatas yra 50'as sarashe, tai jis bus lyginamas su visais jo ir ne jo partiju kandidatais, kurie yra +/-5 pozicijas nuo jo pozicijos. tachiau shitas offsetas negali buti vienodas visoms pozicijoms, nes (pvz) 1-a ir 10-a pozicijos yra nepalyginamos del psichologinio balsavimo efekto (dazhniau zhymeti partijos lyderius ir zhinomus vardus, kurie yra aukshtai sarashe). tad ofsetas yra skirtingas skirtingoms pozicijoms (x):
+	
+	if (x %in% 1:5) ofs = 0
+	if (x %in% 6:10) ofs = 1
+        if (x %in% 11:20) ofs = 2
+        if (x %in% 21:40) ofs = 3
+        if (x %in% 41:60) ofs = 4
+        if (x %in% 61:135) ofs = 5
+        if (x %in% 136:141) ofs = 0
+
+6) dabar, kai kiekviena prieshrinkiminio sarasho pozicija turi savo ofseta, kiekvienai prieshrinkiminio sarasho pozicijai randam jos "ofsetinių kaimynų" (iš visų partijų) normalizuotų pirmumo balsų (Nnorm2) medianą (MED) ir tų balsų standartinį nuokrypį (SD). Mediana shiuo atveju yra geriau nei vidurkis del kandidatų-outlierių sarasho pradzhioje. 
+7) kiekvienai prieshrinkiminio sarasho pozicijai priskiriam virshutinį pirmumo balsų slenkstį (THRextrm), kurį perzhengus kandidatas bus deklaruojamas kaip "susilaukes ishkirtinio rinkejų demesio":
+        THRextrm = MED + 2*SD
+
+8) pereinam per visus kandidatus, ir atsižvelgę į jų poziciją ir palygine jų normalizuotu pirmumo balsu skaichiu (Nnorm2) su tos pozicijos ekstremalumo slenkschiu (THRextrm), deklaruojame juos arba kaip "populiarius" arba kaip "nieko ypatingo".
+
+
