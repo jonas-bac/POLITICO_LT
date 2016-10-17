@@ -4,12 +4,13 @@
 #  NOTE: apskaichiuota ne ish pirmumo balsu, o butent partijoms skirtu balsai daugiamandatese
 
 # 2016 Oct 14, by JonasB
-
+library(digest)
+library(dplyr)
 
 # automatic grabbing from web is not 100% successful, thus I run couple of grabs
 
 ### all available raw data files from VRK
-director = "~/Biostuff/POLITIKA_LT/2016/raw_data/"
+director = "~/Biostuff/POLITIKA_LT/2016/raw_data/vrk_freeze_20161016_1448/"
 ls_files = list.files(director,pattern = "2016_vrk_raw_data_LTapylinkes_onlyPartyVotes")
 
 
@@ -148,10 +149,7 @@ rm(list = ls()[which(ls()!="dat")])
 save(list="dat",file="~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/VRK_2016Seim1_daugmand_onlyPartyVotes_apylink.RData")
 
 
-
-# for further analysis load:
-load("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/VRK_2016Seim1_daugmand_onlyPartyVotes_apylink.RData")
-# or
+# for further analysis load (merged with apyl data):
 load("~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/VRK_2016Seim1_daugmand_onlyPartyVotes_ApylAmbas.RData")
 
 
