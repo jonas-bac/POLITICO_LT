@@ -1,6 +1,6 @@
 # seimo rinkimai 2016
-# pirmumo balsai (daugiamandates): kiekvienam kandidatui ish kiekvienos ambasados
-# (apylinkes - kitame scripte)
+# pirmumo balsai kandidatams (daugiamandates): 
+# kiekvienam kandidatui ish kiekvienos ambasados ir apylinkes
 
 # goal: extract full voting data from VRK
 
@@ -45,7 +45,7 @@ a_meta = data.frame(transl3,stringsAsFactors=F) # rows= voting stations # string
 director = "~/Biostuff/POLITIKA_LT/2016/raw_data/"
 ls_files = list.files(director,pattern = "2016_vrk_raw_data_LTambasados_ratingVotes")
 
-# exceptions: no vrk data for: ???? doublecheck
+# exceptions: no vrk data for: (doublecheck!)
 #Garbės generalinis konsulatas Toronte (Nr.2302) rinkimų apylinkė
 #Punktas Lemonte (JAV) -   Punktas Lemonte (JAV) (Nr.4502) rinkimų apylinkė
 
