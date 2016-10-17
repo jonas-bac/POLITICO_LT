@@ -50,4 +50,3 @@ konsulatas Kaliningrade	Rusija-Klngrd	Diplomatinė	77c1d701	0	3503	Diplomatinė-
 Konsulatas Sovetske	Rus-Sovetsk	Diplomatinė	3af6f91a	0	3504	Diplomatinė-Rus-Sovetsk(3504)
 Ambasada Vokietijos	Vokietija	Diplomatinė	0e023bcd	0	4501	Diplomatinė-Vokietija(4501)
 #Punktas Lemonte	JAV-Lemontas	Diplomatinė	260951b6	0	4502	Diplomatinė-JAV-Lemont(4502)
-
