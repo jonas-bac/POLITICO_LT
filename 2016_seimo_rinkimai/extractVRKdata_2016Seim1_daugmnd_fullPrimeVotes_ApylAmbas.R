@@ -377,3 +377,17 @@ direc = "~/Dropbox/GIT/POLITIKA_LT/2016_seimo_rinkimai/"
 load(paste(direc,"VRK_2016Seim1_daugmand_PrimeVotes_ApylAmbas.RData",sep=""))
 
 
+
+######  export data if needed
+#partija = "Liberalai"
+#sub = m_vote[which(i_meta$partija==partija),]
+#ind = i_meta[which(i_meta$partija==partija),]
+#apl = a_meta$apgapl_abbrev
+#nms=NULL
+#for(i in 1:nrow(ind)) nms = c(nms, paste(unlist(strsplit(ind$vardas[i]," ")),collapse="_"))
+#ind$vardas = nms
+#write.table(sub,"~/Downloads/sub.txt",row.names = F,col.names = F,sep="\t",quote=F)
+#write.table(ind[,1:4],"~/Downloads/ind.txt",row.names = F,col.names = F,sep="\t",quote=F)
+#write.table(apl,"~/Downloads/apl.txt",row.names = F,col.names = F,sep="\t",quote=F)
+
+
