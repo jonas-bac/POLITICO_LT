@@ -1,3 +1,14 @@
+# 2016 metų Lietuvos Respublikos Seimo rinkimai, pirmas turas.
+# sugeneruota iš viešai skelbiamų VRK duomenų (VRK versija 2016-10-16_14:48)
+# identifikuota 2360 individualių daugiamandatinių biuletenių
+# iš kurių 805-i turėjo bent vieną pirmumo balsą (reitinguotą kandidatą)
+#
+# atlikta: 2016 Spalio 22, 20:20
+# by Jonas Bačelis
+#
+# pirmi penki stulpeliai - rinkėjo pasirinkti (reitinguoti) kandidatai
+# viena eilutė = vienas biuletenis
+#
 b1	b2	b3	b4	b5	partija	apylinkė
 1	-	-	-	-	DrąsosKelias	Kėdainių(43)-Parko(29)
 1	-	-	-	-	DrąsosKelias	Nemenčinės(55)-Dūkštų(13)
