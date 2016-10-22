@@ -1,12 +1,15 @@
 # 2016 metų Lietuvos Respublikos Seimo rinkimai, pirmas turas.
 # sugeneruota iš viešai skelbiamų VRK duomenų (VRK versija 2016-10-16_14:48)
+# naudotos visos apylinkės ir LR diplomatinės atstovybės
 # identifikuota 2360 individualių daugiamandatinių biuletenių
 # iš kurių 805-i turėjo bent vieną pirmumo balsą (reitinguotą kandidatą)
+# 1555 nereitinguoti biuleteniai šiame dokumente yra praleisti
 #
 # atlikta: 2016 Spalio 22, 20:20
 # by Jonas Bačelis
 #
-# pirmi penki stulpeliai - rinkėjo pasirinkti (reitinguoti) kandidatai
+# pirmi penki stulpeliai - rinkėjo pažymėti kandidatų priešrinkiminio sąrašo numeriai
+# brūkšnelis reiškia, kad rinkėjas daugiau pirmumo balsų nesuteikė
 # viena eilutė = vienas biuletenis
 #
 b1	b2	b3	b4	b5	partija	apylinkė
